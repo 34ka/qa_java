@@ -8,7 +8,6 @@ import org.mockito.junit.MockitoJUnitRunner;
 import java.util.List;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.spy;
 
 @RunWith(MockitoJUnitRunner.class)
 public class FelineTest {
