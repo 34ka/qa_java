@@ -18,7 +18,6 @@ public class FelineTest {
     public void eatMeatForAnimalKind() throws Exception {
 
         Feline feline = new Feline();
-        Mockito.when(feline.getFood("Хищник")).thenReturn((List.of("Животные", "Птицы", "Рыба")));
 
         List<String> expectedMeat = List.of("Животные", "Птицы", "Рыба");
         List<String> actualMeat = feline.eatMeat();
@@ -40,8 +39,7 @@ public class FelineTest {
     @Test
     public void getKittensReturnsCorrectKittens() {
 
-        Feline feline = spy(new Feline());
-        Mockito.when(feline.getKittens()).thenReturn(0);
+        Feline feline = new Feline();
 
         int expectedKittens = 0;
         int actualKittens = feline.getKittens();
