@@ -17,7 +17,7 @@ public class FelineTest {
 
     public void eatMeatForAnimalKind() throws Exception {
 
-        Feline feline = spy(new Feline());
+        Feline feline = new Feline();
         Mockito.when(feline.getFood("Хищник")).thenReturn((List.of("Животные", "Птицы", "Рыба")));
 
         List<String> expectedMeat = List.of("Животные", "Птицы", "Рыба");
